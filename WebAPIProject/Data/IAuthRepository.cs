@@ -8,6 +8,6 @@ namespace WebAPIProject.Data
 
         User Login (string username, string password);
 
-        bool UserExist(string user);
+        bool UserExist(string userName);
     }
 }
