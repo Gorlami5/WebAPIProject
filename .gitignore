@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/WebAPIProject/Helpers/HashHelper.cs
+/WebAPIProject/Data/IAuthRepository.cs
+/WebAPIProject/Data/AuthRepository.cs

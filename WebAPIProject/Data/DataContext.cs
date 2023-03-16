@@ -11,11 +11,11 @@ namespace WebAPIProject.Data
         {
 
         }
-        public City Cities { get; set; }
+        public DbSet<City> Cities { get; set; }
 
-        public Photo Photos { get; set; }
+        public DbSet<Photo> Photos { get; set; }
 
-        public User Users { get; set; }
+        public DbSet<User> Users { get; set; }
 
     }
 }
