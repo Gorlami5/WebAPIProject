@@ -4,11 +4,12 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using WebAPIProject.Data;
 using Microsoft.Extensions.Configuration;
-
+using WebAPIProject.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 var key = builder.Configuration.GetSection("AppSettings:Token").Value;
 var ekey = Encoding.ASCII.GetBytes(key);
+builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
 
 // Add services to the container.
 
